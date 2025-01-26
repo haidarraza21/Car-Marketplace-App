@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Contact from './contact'
+
 import Home from './home'
 import { ClerkProvider } from '@clerk/clerk-react'
 import Profile from './profile'
@@ -14,10 +14,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <Home />
   },
-  {
-    path: '/contact',
-    element: <Contact />
-  },
+
   {
     path: '/profile',
     element: <Profile />
